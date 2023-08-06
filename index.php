@@ -18,6 +18,5 @@
             <button type="submit">Calculate!</button>
         </form>
 
-
     </body>
 </html>

@@ -27,3 +27,6 @@ $num02 = $_GET["num02"];
 echo "Value: " . myCalculator($num01, $oper, $num02);
 
 ?>
+<form action="index.php" method="get">
+    <button type="submit" style="margin-top:20px; font-size: 16px">Back</button>
+</form>
