@@ -5,9 +5,10 @@
         <title></title>
     </head>
     <body>
-        
+
         <form action="functions.php" method="get">
             <input type="text" name="num01" placeholder="Number 1">
+            
             <select name="oper">
                 <label>Choose operation</label>
                 <option value="add">Add</option>

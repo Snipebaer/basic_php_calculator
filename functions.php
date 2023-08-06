@@ -3,21 +3,29 @@ function myCalculator($num01, $oper, $num02)
 {
     $sum = 0;
 
-    switch($oper) 
+    if (empty($num01) || empty($num02)) 
     {
-        case "add":
-            $sum = $num01 + $num02;
-            break;
-        
-        case "sub":
-            $sum = $num01 - $num02;
-            break;
-        
-        default:
-            $sum = "Something went wrong.";
-            break;
+        echo "<p style='color: red;'>Bitte geben Sie beide Zahlen ein.</p>";
+        return 0;
+    } 
+    else 
+    {
+        switch($oper) 
+        {
+            case "add":
+                $sum = $num01 + $num02;
+                break;
+            
+            case "sub":
+                $sum = $num01 - $num02;
+                break;
+            
+            default:
+                $sum = "Something went wrong.";
+                break;
+        }
+        return $sum;
     }
-    return $sum;
 }
 
 $num01 = $_GET["num01"];
